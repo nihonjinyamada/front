@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIdea</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <h1>AIdea</h1>
+    </header>
+
+    <main>
+        <section id="selection">
+            <p>ここではあなたのAIを利用したアプリ作成のアイディアを提供します。<br>
+            以下から興味のあるジャンルと技術分野を一つずつ選択してください。<br>
+            あなたに合ったアプリまたはツールをご提案します。</p>
+            <h2>ジャンル</h2>
+            <div class="buttons">
+                <button class="genre-btn" data-genre="マーケティング">マーケティング</button>
+                <button class="genre-btn" data-genre="環境">環境</button>
+                <button class="genre-btn" data-genre="教育">教育</button>
+                <button class="genre-btn" data-genre="農業">農業</button>
+                <button class="genre-btn" data-genre="社会">社会</button>
+                <button class="genre-btn" data-genre="食べ物">食べ物</button>
+                <button class="genre-btn" data-genre="事件・事故">事件・事故</button>
+                <button class="genre-btn" data-genre="スポーツ">スポーツ</button>
+                <button class="genre-btn" data-genre="カルチャー">カルチャー</button>
+                <button class="genre-btn" data-genre="医療">医療</button>
+                <button class="genre-btn" data-genre="動物">動物</button>
+                <button class="genre-btn" data-genre="人事">人事</button>
+            </div>
+
+            <h2>技術分野</h2>
+            <div class="buttons">
+                <button class="tech-btn" data-tech="機械学習">機械学習</button>
+                <button class="tech-btn" data-tech="時系列">時系列</button>
+                <button class="tech-btn" data-tech="コンピュータービジョン">コンピュータービジョン</button>
+                <button class="tech-btn" data-tech="自然言語処理">自然言語処理</button>
+                <button class="tech-btn" data-tech="生成AI">生成AI</button>
+                <button class="tech-btn" data-tech="強化学習">強化学習</button>
+            </div>
+        </section>
+
+        <section class="proposal">
+            <p>以下のボタンをクリックして提案を確認しましょう。</p>
+            <button id="getRecommendation">アプリまたはツールを確認する</button>
+        </section>
+
+        <section id="result">
+            <h3>おすすめのアプリまたはツール</h3>
+            <p>あなたの選択に基づいて、以下のアイディアを提案します。</p>
+            <div id="output"></div>
+        </section>
+    </main>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>

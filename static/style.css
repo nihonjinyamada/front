@@ -1,0 +1,174 @@
+body {
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    margin: 0;
+    padding: 0;
+    background-color: #f7f4ed;
+}
+
+header {
+    width: 50%;
+    margin: auto;
+    color: #242424;
+    font-size: 26px;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    text-align: center;
+}
+
+section {
+    width: 60%;
+    margin: 3% auto;
+}
+
+section p {
+    font-size: 18px;
+    text-align: center;
+    margin: 3% auto;
+}
+
+section h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 3% auto 2% auto;
+}
+
+section h3 {
+    font-size: 30px;
+    text-align: center;
+    margin: 3% auto 2% auto;
+}
+
+button {
+    background-color: #242424;
+    color: white;
+    border: none;
+    padding: 20px 5px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+section.proposal {
+    width: 50%;
+    text-align: center;
+}
+
+section.proposal button {
+    padding: 20px 25px;
+}
+
+button:hover {
+    background-color: white;
+    color: #242424;
+}
+
+button.selected {
+    background-color: #34AB45;
+    color: white;
+}
+
+.buttons {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.genre-btn, .tech-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.buttons button:nth-child(7):nth-last-child(1),
+.buttons button:nth-child(10):nth-last-child(1) {
+    grid-column: 2 / span 1;
+}
+
+#output {
+    width: 50%;
+    margin: auto;
+    padding: 0 2% 0 2%;
+    background: white;
+    border:1px solid #6B6B6B;
+    border-radius: 5px;
+    min-height: 200px; 
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+#output p {
+    font-size: 16px;
+    text-align: left; 
+    line-height: 1.8;
+}
+
+.loading-message {
+    color: blue;
+    text-align: center;
+    font-size: 16px;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media (max-width: 1536px) {
+    header {
+        width: 80%;
+    }
+    section {
+        width: 80%;
+    }
+    section.proposal {
+        width: 80%;
+    }
+    .buttons {
+        width: 80%;
+    }
+    #output {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        width: 90%;
+    }
+    section {
+        width: 90%;
+    }
+    section.proposal {
+        width: 90%;
+    }
+    .buttons {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #output {
+        width: 90%;
+    }
+}
+
+@media (max-width: 390px) {
+    header {
+        width: 100%;
+    }
+    section {
+        width: 100%;
+    }
+    section.proposal {
+        width: 100%;
+    }
+    .buttons {
+        width: 100%;
+    }
+    #output {
+        width: 100%;
+    }
+}
