@@ -37,7 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const response = await fetch("https://back-2z0c.onrender.com/generate/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ genre: selectedGenre, tech: selectedTech })
+                body: JSON.stringify({ 
+                    ジャンル: selectedGenre,  
+                    技術分野: selectedTech    
+                })
             });
 
             if (!response.ok) {
