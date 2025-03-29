@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let selectedGenre = null;
     let selectedTech = null;
 
-    // ジャンル選択ボタンの処理
+    // ジャンルボタンの処理
     document.querySelectorAll(".genre-btn").forEach(button => {
         button.addEventListener("click", () => {
             document.querySelectorAll(".genre-btn").forEach(b => b.classList.remove("selected"));
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // 技術分野選択ボタンの処理
+    // 技術分野ボタンの処理
     document.querySelectorAll(".tech-btn").forEach(button => {
         button.addEventListener("click", () => {
             document.querySelectorAll(".tech-btn").forEach(b => b.classList.remove("selected"));
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // おすすめの取得ボタンが押されたとき
+    // おすすめボタンの処理
     recommendButton.addEventListener("click", async () => {
         outputDiv.innerHTML = ""; 
 
