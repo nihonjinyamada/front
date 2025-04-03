@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // おすすめの取得ボタンが押されたとき
+    // おすすめのボタンが押されたときの処理
     recommendButton.addEventListener("click", async () => {
         outputDiv.innerHTML = ""; 
 
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         outputDiv.innerHTML = "<p class='loading-message'>データを取得中...</p>";
 
         try {
-            const response = await fetch("https://back-2z0c.onrender.com/generate/", {
+            const response = await fetch("http://127.0.0.1:8000/generate/", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ 
